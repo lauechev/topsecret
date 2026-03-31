@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>top secret</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="gate">
+  <span>password</span>
+  <div style="position:relative;display:inline-block">
+    <input id="pw" type="password" autocomplete="off" spellcheck="false">
+    <span id="pwError">x</span>
+  </div>
+</div>
+
+<div id="player">
+  <button id="playBtn" aria-label="Play">
+    <svg id="iconPlay" viewBox="0 0 24 24"><polygon points="6,3 20,12 6,21"/></svg>
+    <svg id="iconPause" viewBox="0 0 24 24" style="display:none"><rect x="5" y="3" width="4" height="18"/><rect x="15" y="3" width="4" height="18"/></svg>
+  </button>
+  <div id="seekWrap"><div id="seekFill"></div></div>
+  <div id="time"><span id="cur">0:00</span><span id="dur">0:00</span></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
