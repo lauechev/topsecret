@@ -11,19 +11,26 @@ const cur = document.getElementById('cur');
 const dur = document.getElementById('dur');
 
 const pwError = document.getElementById('pwError');
+const enterBtn = document.getElementById('enterBtn');
+
+function tryPassword() {
+  if (pw.value === 'gtanna') {
+    gate.style.display = 'none';
+    player.style.display = 'flex';
+  } else {
+    pwError.style.display = 'block';
+  }
+}
 
 pw.addEventListener('keydown', e => {
   if (e.key === 'Enter') {
-    if (pw.value === 'gtanna') {
-      gate.style.display = 'none';
-      player.style.display = 'flex';
-    } else {
-      pwError.style.display = 'block';
-    }
+    tryPassword();
   } else {
     pwError.style.display = 'none';
   }
 });
+
+enterBtn.addEventListener('click', tryPassword);
 
 function fmt(s) {
   if (isNaN(s)) return '0:00';

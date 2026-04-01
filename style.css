@@ -44,6 +44,19 @@ body {
 #gate input:focus {
   border-color: #E2C072;
 }
+#enterBtn {
+  background: #E2C072;
+  border: none;
+  border-radius: 4px;
+  width: 73px;
+  padding: 6px 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#enterBtn svg { stroke: #390c0d; }
+#enterBtn:hover { background: #958340; }
 #gate #pwError {
   display: none;
   position: absolute;
