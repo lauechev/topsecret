@@ -2,7 +2,7 @@
 html, body {
   width: 100%; height: 100%;
   overflow: hidden;
-  background: #870001;
+  background: #390c0d;
   font-family: 'IM Fell DW Pica', serif;
   font-style: italic;
 
@@ -29,8 +29,8 @@ body {
   text-transform: lowercase;
 }
 #gate input {
-  background: #870001;
-  border: 1.5px solid #E2C072;
+  background: #390c0d;
+  border: 1.5px solid #958340;
   color: #E2C072;
   font-family: 'IM Fell DW Pica', serif;
   font-style: italic;
